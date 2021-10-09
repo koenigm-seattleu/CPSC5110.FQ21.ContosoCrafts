@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using ContosoCrafts.WebSite.Models;
 using ContosoCrafts.WebSite.Services;
 
-namespace ContosoCrafts.WebSite.Pages.Products
+namespace ContosoCrafts.WebSite.Pages.Product
 {
     /// <summary>
     /// Index Page will return all the data to show
