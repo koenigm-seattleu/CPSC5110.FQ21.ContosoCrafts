@@ -27,14 +27,14 @@ namespace UnitTests.Pages.Product.Create
         public void OnGet_Valid_Should_Return_Products()
         {
             // Arrange
-            var oldCount = TestHelper.ProductService.GetProducts().Count();
+            var oldCount = TestHelper.ProductService.GetAllData().Count();
 
             // Act
             pageModel.OnGet();
 
             // Assert
             Assert.AreEqual(true, pageModel.ModelState.IsValid);
-            Assert.AreEqual(oldCount+1, TestHelper.ProductService.GetProducts().Count());
+            Assert.AreEqual(oldCount+1, TestHelper.ProductService.GetAllData().Count());
         }
         #endregion OnGet
     }
