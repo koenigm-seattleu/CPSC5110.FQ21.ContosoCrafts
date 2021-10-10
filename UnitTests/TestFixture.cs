@@ -7,6 +7,12 @@ namespace UnitTests
     [SetUpFixture]
     public class TestFixture
     {
+        // Path to the Web Root
+        public static string DataWebRootPath = "./wwwroot";
+
+        // Path to the data folder for the content
+        public static string DataContentRootPath = "./data/";
+
         [OneTimeSetUp]
         public void RunBeforeAnyTests()
         {
