@@ -7,6 +7,9 @@ using ContosoCrafts.WebSite.Services;
 
 namespace ContosoCrafts.WebSite.Pages.Product
 {
+    /// <summary>
+    /// Create Page
+    /// </summary>
     public class CreateModel : PageModel
     {
         // Data middle tier
