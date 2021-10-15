@@ -39,9 +39,9 @@ namespace UnitTests.Pages.Product.Delete
         }
         #endregion OnGet
 
-        #region OnPostAsync
+        #region OnPost
         [Test]
-        public void OnPostAsync_Valid_Should_Return_Products()
+        public void OnPost_Valid_Should_Return_Products()
         {
             // Arrange
 
@@ -62,7 +62,7 @@ namespace UnitTests.Pages.Product.Delete
         }
 
         [Test]
-        public void OnPostAsync_InValid_Model_NotValid_Return_Page()
+        public void OnPost_InValid_Model_NotValid_Return_Page()
         {
             // Arrange
             pageModel.Product = new ProductModel
@@ -83,6 +83,6 @@ namespace UnitTests.Pages.Product.Delete
             // Assert
             Assert.AreEqual(false, pageModel.ModelState.IsValid);
         }
-        #endregion OnPostAsync
+        #endregion OnPost
     }
 }
