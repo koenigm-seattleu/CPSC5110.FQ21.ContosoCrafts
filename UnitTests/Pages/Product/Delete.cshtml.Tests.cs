@@ -65,14 +65,6 @@ namespace UnitTests.Pages.Product.Delete
         public void OnPost_InValid_Model_NotValid_Return_Page()
         {
             // Arrange
-            pageModel.Product = new ProductModel
-            {
-                Id = "bogus",
-                Title = "bogus",
-                Description = "bogus",
-                Url = "bogus",
-                Image = "bougs"
-            };
 
             // Force an invalid error state
             pageModel.ModelState.AddModelError("bogus", "bogus error");
