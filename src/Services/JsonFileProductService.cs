@@ -61,6 +61,18 @@ namespace ContosoCrafts.WebSite.Services
                 return;
             }
 
+            // Check Rating for boundries, do not allow ratings below 0
+            if (rating < 0)
+            {
+                return;
+            }
+
+            // Check Rating for boundries, do not allow ratings above 5
+            if (rating > 5)
+            {
+                return;
+            }
+
             // Check to see if the rating exist, if there are none, then create the array
             if(data.Ratings == null)
             {
