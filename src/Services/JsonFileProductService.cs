@@ -107,7 +107,7 @@ namespace ContosoCrafts.WebSite.Services
 
             // Update the data to the new passed in values
             productData.Title = data.Title;
-            productData.Description = data.Description;
+            productData.Description = data.Description.Trim();
             productData.Url = data.Url;
             productData.Image = data.Image;
 
