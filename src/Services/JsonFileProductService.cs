@@ -105,10 +105,12 @@ namespace ContosoCrafts.WebSite.Services
                 return null;
             }
 
+            // Update the data to the new passed in values
             productData.Title = data.Title;
             productData.Description = data.Description;
             productData.Url = data.Url;
             productData.Image = data.Image;
+            productData.Quantity = data.Quantity;
 
             SaveData(products);
 
