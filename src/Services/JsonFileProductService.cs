@@ -110,7 +110,9 @@ namespace ContosoCrafts.WebSite.Services
             productData.Description = data.Description;
             productData.Url = data.Url;
             productData.Image = data.Image;
+
             productData.Quantity = data.Quantity;
+            productData.Price = data.Price;
 
             SaveData(products);
 
