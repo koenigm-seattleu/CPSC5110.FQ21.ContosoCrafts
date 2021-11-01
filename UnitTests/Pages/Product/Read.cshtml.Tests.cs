@@ -1,8 +1,9 @@
 
+using Microsoft.AspNetCore.Mvc;
+
 using NUnit.Framework;
 
 using ContosoCrafts.WebSite.Pages.Product;
-using Microsoft.AspNetCore.Mvc;
 
 namespace UnitTests.Pages.Product.Read
 {
