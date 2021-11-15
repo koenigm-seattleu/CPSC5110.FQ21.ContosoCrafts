@@ -7,9 +7,10 @@ namespace ContosoCrafts.WebSite.Models
 {
     public enum ProductTypeEnum
     {
-        Amature,
-        Antique,
-        Collectable,
-        Commercial,
+        Undefined = 0,
+        Amature = 1,
+        Antique = 5,
+        Collectable = 130,
+        Commercial = 55,
     }
 }
