@@ -14,8 +14,7 @@
 
 </div>
 
-<div class="card-columns">
-
+<div class="container-fluid">
     @{
         var productList = ProductService.GetAllData();
 
@@ -42,22 +41,26 @@
                 productListGroup = productListGroup.Where(m => m.Title.Contains(FilterDataString));
             }
 
-            foreach (var product in productListGroup)
-            {
-                <div class="card">
-                    <div class="card-img" style="background-image: url('@product.Image');">
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">@product.Title</h5>
-                        <h6 class="card-subtitle">@product.ProductType</h6>
-                    </div>
-                    <div class="card-footer">
-                        <small class="text-muted">
-                            <button @onclick="(e => SelectProduct(product.Id))" id="MoreInfoButton_@product.Id" data-toggle="modal" data-target="#productModal" class="btn btn-primary">More Info</button>
-                        </small>
-                    </div>
+            <div class="row">
+                <div class="card-columns">
+                    @foreach (var product in productListGroup)
+                    {
+                        <div class="card">
+                            <div class="card-img" style="background-image: url('@product.Image');">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">@product.Title</h5>
+                                <h6 class="card-subtitle">@product.ProductType</h6>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted">
+                                    <button @onclick="(e => SelectProduct(product.Id))" id="MoreInfoButton_@product.Id" data-toggle="modal" data-target="#productModal" class="btn btn-primary">More Info</button>
+                                </small>
+                            </div>
+                        </div>
+                    }
                 </div>
-            }
+            </div>
         }
     }
 </div>
