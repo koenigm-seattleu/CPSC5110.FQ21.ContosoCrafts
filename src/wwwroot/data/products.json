@@ -6,6 +6,7 @@
     "Url": "https://www.hackster.io/agent-hawking-1/the-quantified-cactus-an-easy-plant-soil-moisture-sensor-e65393",
     "Title": "The Quantified Cactus: An Easy Plant Soil Moisture Sensor",
     "Description": "This project is a great learning project to get comfortable with soldering and programming an Arduino.",
+    "ProductType": 55,
     "Ratings": [
       5,
       5,
@@ -22,6 +23,7 @@
     "Url": "https://www.hackster.io/agent-hawking-1/book-light-dee7e4",
     "Title": "A beautiful switch-on book light",
     "Description": "Use craft items you have around the house, plus two LEDs and a LilyPad battery holder, to create a useful book light for reading in the dark.",
+    "ProductType": 1,
     "Ratings": null
   },
   {
@@ -31,6 +33,7 @@
     "Url": "https://www.hackster.io/agent-hawking-1/bling-your-laptop-with-an-internet-connected-light-show-30e4db",
     "Title": "Bling your Laptop with an Internet-Connected Light Show",
     "Description": "Create a web-connected light-strip API controllable from your website, using the Particle.io.",
+    "ProductType": 55,
     "Ratings": null
   },
   {
@@ -40,6 +43,7 @@
     "Url": "https://www.hackster.io/agent-hawking-1/create-a-compact-survival-kit-38bfdb",
     "Title": "Create a Compact Survival Kit with LED Track Lighting",
     "Description": "Use an Altoids tin with Chibitronics sticker LEDs to create a light-up compact that doubles as a survival kit for the young hipster",
+    "ProductType": 1,
     "Ratings": null
   },
   {
@@ -49,6 +53,7 @@
     "Url": "https://twitter.com/sailorhg/status/1090107740049952770",
     "Title": "Bubblesort Visualization",
     "Description": "Visualization of sailor scouts sorted by bubblesort algorithm by their planet\u0027s distance from the sun",
+    "ProductType": 55,
     "Ratings": null
   },
   {
@@ -58,6 +63,7 @@
     "Url": "https://twitter.com/sailorhg/status/1090113666911891456",
     "Title": "Light-up Corsage",
     "Description": "Light-up corsage I made with my summer intern.",
+    "ProductType": 1,
     "Ratings": null
   },
   {
@@ -67,6 +73,7 @@
     "Url": "https://twitter.com/sailorhg/status/1090122822007963648",
     "Title": "Pastel hardware kit",
     "Description": "Pastel hardware kits complete with custom manufactured pastel alligator clips.",
+    "ProductType": 130,
     "Ratings": null
   },
   {
@@ -76,6 +83,7 @@
     "Url": "https://twitter.com/sailorhg/status/1090117277540745216",
     "Title": "Heart-shaped LED",
     "Description": "custom molded heart shaped LED with sprinkles.",
+    "ProductType": 1,
     "Ratings": null
   },
   {
@@ -85,6 +93,7 @@
     "Url": "https://www.instagram.com/p/BNvESj-j8PI/",
     "Title": "Black Sweatshirt",
     "Description": "Black sweatshirt hoody with the Sick of the Internet logo.",
+    "ProductType": 55,
     "Ratings": null
   },
   {
@@ -94,6 +103,7 @@
     "Url": "https://www.instagram.com/p/BNm6hZzDoEF/",
     "Title": "Sick of the Internet Pins",
     "Description": "Still some time to enter the pin/sticker giveaway! ",
+    "ProductType": 1,
     "Ratings": null
   },
   {
@@ -103,6 +113,7 @@
     "Url": "https://www.vogueandcode.com/shop/hipster-dev-bro",
     "Title": "Hipster Dev",
     "Description": "Hipster Dev is busy coding away while styled in a camo jacket and orange beanie.",
+    "ProductType": 1,
     "Ratings": null
   },
   {
