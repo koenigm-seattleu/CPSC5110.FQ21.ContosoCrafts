@@ -22,6 +22,7 @@ namespace ContosoCrafts.WebSite.Models
 
         public int[] Ratings { get; set; }
 
+        public ProductTypeEnum ProductType { get; set; } = ProductTypeEnum.Commercial;
 
         public string Quantity { get; set; }
 
