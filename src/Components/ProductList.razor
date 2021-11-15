@@ -27,27 +27,37 @@
 
         */
 
-        
-        // If filter is enabled, reduce the data set to the filter string
-        if (FilterData)
+        // Group by the Enum
+        foreach (ProductTypeEnum productType in Enum.GetValues(typeof(ProductTypeEnum)))
         {
-            productList = productList.Where(m => m.Title.Contains(FilterDataString));
-        }
+            // Get only the products that are of this enum type
+            var productListGroup = productList.Where(m => m.ProductType == productType);
 
-        foreach (var product in productList)
-        {
-            <div class="card">
-                <div class="card-img" style="background-image: url('@product.Image');">
+            // Order the list alphabetical
+            productListGroup = productListGroup.OrderBy(m => m.Title);
+
+            // If filter is enabled, reduce the data set to the filter string
+            if (FilterData)
+            {
+                productListGroup = productListGroup.Where(m => m.Title.Contains(FilterDataString));
+            }
+
+            foreach (var product in productListGroup)
+            {
+                <div class="card">
+                    <div class="card-img" style="background-image: url('@product.Image');">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">@product.Title</h5>
+                        <h6 class="card-subtitle">@product.ProductType</h6>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">
+                            <button @onclick="(e => SelectProduct(product.Id))" id="MoreInfoButton_@product.Id" data-toggle="modal" data-target="#productModal" class="btn btn-primary">More Info</button>
+                        </small>
+                    </div>
                 </div>
-                <div class="card-body">
-                    <h5 class="card-title">@product.Title</h5>
-                </div>
-                <div class="card-footer">
-                    <small class="text-muted">
-                        <button @onclick="(e => SelectProduct(product.Id))" id="MoreInfoButton_@product.Id" data-toggle="modal" data-target="#productModal" class="btn btn-primary">More Info</button>
-                    </small>
-                </div>
-            </div>
+            }
         }
     }
 </div>
@@ -87,21 +97,7 @@
                                     <span>@voteString</span>
 
                                     for (int i = 1; i < 6; i++)
-             
-         * 
-         * 
-     
-         * 
-         * 
-         *     * 
- 
-
-         
-         
-           
-         * 
-         *        
-                 *                       {
+                                    {
                                         var currentStar = i;
                                         var checkedText = "";
 
