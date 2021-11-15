@@ -13,4 +13,21 @@ namespace ContosoCrafts.WebSite.Models
         Collectable = 130,
         Commercial = 55,
     }
+
+    public static class ProductTypeEnumExtensions
+    {
+        public static string DisplayName(this ProductTypeEnum data)
+        {
+            return data switch
+            {
+                ProductTypeEnum.Amature => "Hand Made Items",
+                ProductTypeEnum.Antique => "Antiques",
+                ProductTypeEnum.Collectable => "Collectables",
+                ProductTypeEnum.Commercial => "Commercial goods",
+ 
+                // Default, Unknown
+                _ => "",
+            };
+        }
+    }
 }
