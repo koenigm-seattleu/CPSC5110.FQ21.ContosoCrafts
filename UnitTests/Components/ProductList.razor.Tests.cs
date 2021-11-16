@@ -59,7 +59,7 @@ namespace UnitTests.Components
             var pageMarkup = page.Markup;
 
             // Assert
-            Assert.AreEqual(true, pageMarkup.Contains("This project is a good learning project to get comfortable with soldering and programming an Arduino."));
+            Assert.AreEqual(true, pageMarkup.Contains("This project is a great learning project to get comfortable with soldering and programming an Arduino."));
         }
         #endregion SelectProduct
 
