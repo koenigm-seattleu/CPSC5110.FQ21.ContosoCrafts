@@ -50,7 +50,7 @@ namespace ContosoCrafts.WebSite.Pages.Product
 
             // Set the values for Product ID, Comment ID and Comment to show on the page
             ProductId = Product.Id;
-            CommentId = CommentId;
+            CommentId = data.Id;
             CommentText = data.Comment;
         }
 
